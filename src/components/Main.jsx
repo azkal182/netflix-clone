@@ -25,7 +25,7 @@ const Main = () => {
     } else {
         return (
             <>
-                <div className='w-full h-[500px] overflow-hidden'>
+                <div className='hidden md:block w-full h-[500px] overflow-hidden'>
                     <div className='absolute w-full h-[500px] bg-gradient-to-r from-black'></div>
                     <div>
                         <img

@@ -18,10 +18,6 @@ const Row = ({ title, urlRequest }) => {
         setOpenModal(false)
     }
 
-    const getData = (datas) => {
-        data = datas
-    }
-
     useEffect(() => {
         axios(urlRequest).then((res) => {
             setMovies(res.data.results.data)
@@ -38,7 +34,7 @@ const Row = ({ title, urlRequest }) => {
                 />
             )}
 
-            <div className='text-white mx-6'>
+            <div className='text-white mx-6 pt-14 md:pt-2'>
                 <h1 className='font-bold text-lg'>{title}</h1>
                 <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4'>
                     {movies.map((movie, index) => {
